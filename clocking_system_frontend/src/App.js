@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+import DateTime from './DateTime';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <p>hi</p>
+      <p>CURRENT TIME + DATE</p>
+      <DateTime/>
     </div>
   );
 }
