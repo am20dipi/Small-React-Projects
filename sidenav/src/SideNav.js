@@ -4,12 +4,12 @@ const SideNav = (props) => {
     
     
     return (
-        <div className="sidenav">
+        <div className="sidenav" style={{width: props.width}} >
             <button onClick={props.closeSideNav}>X</button><br/>
-            <a href="#section" style={{width: props.width}}>About</a><br/>
-            <a href="#section" style={{width: props.width}}>Contact Us</a><br/>
-            <a href="#section" style={{width: props.width}}>FAQ</a><br/>
-            <a href="#section" style={{width: props.width}}>Home</a><br/>
+            <a href="#section" >About</a><br/>
+            <a href="#section" >Contact Us</a><br/>
+            <a href="#section" >FAQ</a><br/>
+            <a href="#section" >Home</a><br/>
         </div>
     )
 }

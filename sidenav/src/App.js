@@ -5,7 +5,8 @@ import React, {useState} from 'react';
 function App() {
   const [width, setWidth] = useState('0%')
 
-  const openSideNav = () => {
+  const openSideNav = (e) => {
+    console.log(e)
     setWidth('25%')
   }
 
