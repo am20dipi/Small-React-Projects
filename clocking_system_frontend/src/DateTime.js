@@ -17,10 +17,11 @@ export const DateTime = () => {
             clearInterval(timer)
         }
     })
-
+    // toLocaleTimeString will extract the time from the whole object and return it as a string
     return (
         <div className="current">
             <p> Time: {date.toLocaleTimeString()}</p>
+    
             <p> Date: {date.toLocaleDateString()}</p>
         </div>
     )
