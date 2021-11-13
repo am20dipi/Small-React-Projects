@@ -4,7 +4,12 @@ This simple, SPA is built off of React.
 It's goal: to display the current date and time in an UI friendly manner on the browser page. 
 
 
+## GOALS
 
+1. Create a DateTime component.
+2. Using React Hooks, useEffect and useState, maintain the state of the date and time once the component is rendered.
+3. Display the current date and time on the browser page. 
+4. Import the DateTime component to our App component. 
 
 <!-- # Getting Started with Create React App
 
