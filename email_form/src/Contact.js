@@ -8,6 +8,7 @@ export const Contact = () => {
     const handleSubmit = (data) => {
         console.log(data)
     }
+    
     return (
         <div className="contact">
             <h2>CONTACT</h2>
