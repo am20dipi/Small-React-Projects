@@ -1,5 +1,5 @@
 function Nav(){
-    retunr (
+    return (
         <section className="nav">
             <ul>
                 <li>Home</li>
