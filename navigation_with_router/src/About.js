@@ -1,6 +1,6 @@
 function About(){
     return (
-        <section className="about-container">
+        <div className="about-container">
             <h2>A Little About Us..</h2>
             <br/>
             <p>We are a startup founded on the principle that everyone deserves to have fun.</p>
@@ -12,7 +12,7 @@ function About(){
                 <li>Good Times</li>
             </ul>
 
-        </section>
+        </div>
     )
 }
 

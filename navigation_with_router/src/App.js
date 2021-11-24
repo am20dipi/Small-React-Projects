@@ -25,10 +25,10 @@ function App() {
         <Nav/>
         <Routes>
           {/* Routes only renders the first component that matches the URL -- it is more specific */}
-          <Route  path="/" exact component={Home}></Route>
+          <Route path="/" element={<Home/>}></Route>
           {/* render Home if the URL contains '/' */}
           {/* render About if the URL contains '/about' */}
-          <Route  path="/about" exact component={About}></Route>
+          <Route path="/about" element={<About/>}></Route>
           {/* exact prop now tells React Router to display the component only if the URL path is exact */}
         </Routes>
       </Router>
