@@ -10,7 +10,7 @@ import {
 // Route allows us to tell React to render specific component to a specific route
 // BrowserRouter adds routing capabilities -- everything between the BrowserRoute tags will have the ability to perform routing
 // Routes renders the first Route it encounters that matches the route.
-// Redirect module will allow us to redirect the user to another route depending on the directory.
+// Navigate module will allow us to Navigate the user to another route depending on the directory.
 
 import Home from './Home'
 import About from './About'
