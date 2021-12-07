@@ -41,8 +41,45 @@ function App() {
       ],
     },
   ]
+
+  const [currentQuestion, setCurrentQuestion] = useState(0)
+  const [showScore, setShowScore] = useState(false)
+  const [score, setScore] = useState(0)
+
+  const handleAnswerButtonClick = (isCorrect) => {
+    if (isCorrect === true){
+      setScore(score + 1)
+    }
+    const nextQuestions = currentQuestion + 1
+
+    if (nextQuestions < questions.length){
+      setCurrentQuestion(nextQuestions)
+    } else {
+      setShowScore(true)
+    }
+  }
+
   return (
     <div className="App">
+      <h1 className='header'>QUIZ</h1>
+      { showScore ? (
+        <div className='score-container'>
+          You scored {score} out of {questions.length}!
+        </div>
+
+      ) : (
+        <>
+          <div className='question-container'>
+            <div className="question-text">
+              {questions[currentQuestion].questionText}
+            </div><br/>
+          </div><div className="answer-container">
+              {questions[currentQuestion].answerOptions.map((answerOptions) => (
+                <li><button onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}>{answerOptions.answerText}</button></li>
+              ))}
+          </div>
+        </>
+      )}
       
     </div>
   )
