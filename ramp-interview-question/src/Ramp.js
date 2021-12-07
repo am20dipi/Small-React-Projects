@@ -10,8 +10,10 @@
         // A functional component using React Hooks is preferred, though not required. 
 // In the text box below, please provide a link to your https://codesandbox.io/s project displaying instances of the component - one per input type. 
 
-function Ramp() {
-    return ()
+function Ramp(input) {
+    return (
+
+    )
 }
 
 export default Ramp;
