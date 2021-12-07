@@ -30,3 +30,8 @@ button {
 button:hover{
   border: 2px solid blue;
 }
+
+span {
+  font-size: large;
+  color: blue;
+}

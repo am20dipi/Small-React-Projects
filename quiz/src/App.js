@@ -59,18 +59,24 @@ function App() {
     }
   }
 
+  const handleTryAgainClick = () => {
+    window.location.reload()
+  }
+
   return (
     <div className="App">
       <h1 className='header'>QUIZ</h1>
       { showScore ? (
         <div className='score-container'>
-          You scored {score} out of {questions.length}!
+          You scored {score} out of {questions.length}!<br/><br/>
+          <button onClick={ () => handleTryAgainClick()}>Try Again?</button>
         </div>
 
       ) : (
         <>
           <div className='question-container'>
             <div className="question-text">
+              <span>Question {currentQuestion + 1}</span><br/><br/>
               {questions[currentQuestion].questionText}
             </div><br/>
           </div><div className="answer-container">
